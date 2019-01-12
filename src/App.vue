@@ -1,21 +1,38 @@
 <template>
   <div id="app">
     <kendo-datasource
-      ref="dataSource"
+      ref="dataSource0"
       :transport-read-url="'https://api.iextrading.com/1.0/stock/aapl/chart/1m'"
       :transport-read-data-type="'json'">
     </kendo-datasource>
+    <kendo-datasource
+      ref="dataSource1"
+      :transport-read-url="'https://api.iextrading.com/1.0/stock/aapl/chart/3m'"
+      :transport-read-data-type="'json'">
+    </kendo-datasource>
+    <kendo-datasource
+      ref="dataSource2"
+      :transport-read-url="'https://api.iextrading.com/1.0/stock/aapl/chart/6m'"
+      :transport-read-data-type="'json'">
+    </kendo-datasource>
+    <kendo-buttongroup 
+      :index="0"
+      @select="onSelect">
+      <kendo-buttongroup-button>1M</kendo-buttongroup-button>
+      <kendo-buttongroup-button>3M</kendo-buttongroup-button>
+      <kendo-buttongroup-button>6M</kendo-buttongroup-button>
+    </kendo-buttongroup>
     <p>
       Volume
       <kendo-sparkline
-        :data-source-ref="'dataSource'"
+        :data-source-ref="dataSource"
         :series="seriesA">
       </kendo-sparkline>
     </p>
     <p>
-      Close
+      Closing Price
       <kendo-sparkline
-        :data-source-ref="'dataSource'"
+        :data-source-ref="dataSource"
         :series="seriesB">
       </kendo-sparkline>
     </p>
@@ -27,6 +44,7 @@ export default {
   name: 'app',
   data () {
     return {
+      dataSource: 'dataSource0',
       seriesA: [{
         type: 'column',
         field: 'volume'
@@ -35,6 +53,18 @@ export default {
         type: 'line',
         field: 'close'
       }]
+    }
+  },
+  methods: {
+    onSelect: function(e) {
+      if(e.indices == 0) {
+        this.dataSource = 'dataSource0'
+      } 
+      else if(e.indices == 1) {
+        this.dataSource = 'dataSource1'
+      } else {
+        this.dataSource = 'dataSource2'
+      }
     }
   }
 }
@@ -46,3 +76,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+

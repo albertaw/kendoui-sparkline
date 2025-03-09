@@ -1,6 +1,15 @@
-# sparkline
+# Kendo UI Sparkline for Vue
 
-> A Vue.js project
+##  Overview
+
+A sparkline is a condensed version of a chart that shows a high-level overview of the data with minimal details. Its smaller size allows it to be embedded within text, spreadsheets, or other graphics. The Kendo UI sparkline component can be visualized as a line chart, bar chart, or pie chart.
+
+Example:
+![Sparkline example](src/assets/vue-sparklines1.png)
+
+See the following getting started tutorial to learn more:
+
+[How to Use a Vue Sparkline UI Component in your Web App](https://www.telerik.com/blogs/how-to-use-a-vue-sparkline-ui-component-in-your-web-app)
 
 ## Build Setup
 
@@ -15,4 +24,4 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+

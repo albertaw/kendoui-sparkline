@@ -9,6 +9,7 @@ Example:
 ![Sparkline example](src/assets/vue-sparkline.png)
 
 See the following getting started tutorial to learn more: 
+
 [How to Use a Vue Sparkline UI Component in your Web App](https://www.telerik.com/blogs/how-to-use-a-vue-sparkline-ui-component-in-your-web-app)
 
 ## Build Setup

@@ -28,9 +28,13 @@ npm run build
 ```
 ## Related Links
 
-- [Kendo UI Pie and Donut Chart for Vue](https://github.com/albertaw/kendoui-donutchart)
-- [Kendo UI Scatter and Bubble Chart for Vue](https://github.com/albertaw/kendoui-bubblechart)
+- [Kendo UI Pie Chart for Vue](https://github.com/albertaw/kendoui-piechart)
+- [Kendo UI Donut Chart for Vue](https://github.com/albertaw/kendoui-donutchart)
+- [Kendo UI Scatter Chart for Vue](https://github.com/albertaw/kendoui-scatterchart)
+- [Kendo UI Bubble Chart for Vue](https://github.com/albertaw/kendoui-bubblechart)
 - [Kendo UI Bar Chart for Vue](https://github.com/albertaw/kendoui-barchart)
 - [Kendo UI Line Chart for Vue](https://github.com/albertaw/kendoui-linechart)
 - [Kendo UI StockChart for Vue](https://github.com/albertaw/kendoui-stockchart)
+
+
 
